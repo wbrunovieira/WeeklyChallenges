@@ -50,16 +50,25 @@ namespace ChallengesWithTestsMark8
             return multiplyResult;
         }
 
-        public string GetGreeting(string nameOfPerson)
+        public string GetGreeting(string personName)
         {
-            Console.WriteLine($"Hello {nameOfPerson}");
-            return nameOfPerson;
+            if (personName == "")
+            {
+                return "Hello!";
+            }
+
+            else
+            {
+                return $"Hello, {personName}!";
+            }
+           
         }
 
-        public string GetHey(string nameOfPerson)
+        public string GetHey()
         {
-            Console.WriteLine($"Hey "{nameOfPerson});
-            return nameOfPerson;
+          
+            return "HEY!";
         }
+        
     }
 }
